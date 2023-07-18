@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoas</title>
+
+    <link rel="shortcut icon" href="Midia/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="Estilop.css">
+
+    <style>
+
+        div#a{
+            width: 480px;
+            text-align: justify;
+            display: block; 
+            background-color: #f0c58e; 
+            padding: 5px;
+        }
+        div#botao{
+            min-width: 0;
+            width: 60px;
+        }
+        div#campo{
+            width: 400px;
+        }
+        div#foto{
+            background: #f0c58e;
+            border-radius: 50%;
+            width: 230px;
+            height: 230px;
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+    
+    <Header>
+
+    <h1>Pessoas</h1>
+    
+    <a href="Menu.HTML">
+        <div class="b" id="bot" onmouseover="entrar('bot')" onmouseleave="sair('bot')">Voltar</div>
+    </a>
+
+    </Header>
+    <section style="height: fit-content;">
+        
+        
+
+        <div id="a" >Ano de nascimento: <input type="number"     name="idade" id="idade" min="0"> 
+        
+            <br>
+            Sexo:
+
+                <input type="radio" name="sex" id="masc" checked> <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem"> <label for="fem">Feminino</label>
+              
+            
+
+            <div class="b" id="botao" onclick="processar()" onmouseover="entrar('botao')" onmouseleave="sair('botao')">ir</div>
+
+        </div> 
+     
+
+
+            <div class="i" id="foto">
+                <img id="imga" src="" alt="">
+            </div>
+        
+
+        <div class="m" id="campo"></div>
+
+        
+        
+
+
+    </section>
+    <footer>
+        <p>By oCactoPlayer</p>
+    </footer>
+    <script src ="script.js"></script>
+</body>
+</html>

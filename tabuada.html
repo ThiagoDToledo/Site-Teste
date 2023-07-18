@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="shortcut icon" href="Midia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Estilop.css">
+
+    <style>
+
+        div#men{
+            display: block;
+            width: auto;
+            background-color: #f0c58e;
+            text-align: left;
+            
+        }
+        div#resu{
+            margin-top: 20px;
+            display: block;
+            width: auto;
+            background-color: #f0c58e;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <Header>
+
+    <h1>Tabuada</h1>
+
+    <a href="Menu.HTML">
+        <div class="b" id="bot" onmouseover="entrar('bot')" onmouseleave="sair('bot')">Voltar</div>
+    </a>
+
+    </Header>
+    <section>
+
+        <div class="m" id="men">Escolha um numero: <input type="number" name="num" id="num"> 
+            
+            <div class="b" id="botao" onclick="tabuada()" onmousedown="clicar()" onmouseup="soltar()" onmouseover="entrar('botao')" onmouseleave="sair('botao')">Ir</div>
+    
+        </div>
+           
+            <div class="m" id="resu">
+                <select name="lista" id="lista" size="10">
+                    <option value="">Escolha um número acima </option>
+                </select>
+            </div>    
+
+    </section>
+    <footer>
+        <p>By oCactoPlayer</p>
+    </footer>
+    <script src ="script.js"></script>
+</body>
+</html>

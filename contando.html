@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando</title>
+
+    <link rel="shortcut icon" href="Midia/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="Estilop.css">
+
+    <style>
+
+
+        div#res{
+            margin-top: 20px;          
+            width: auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <Header>
+    <h1>Contando</h1>
+
+    <a href="Menu.HTML">
+        <div class="b" id="bot" onmouseover="entrar('bot')" onmouseleave="sair('bot')">Voltar</div>
+    </a>
+
+    </Header>
+    <section>
+        <div class="m" id="men">
+
+          Início: <input type="number" name="inicio" id="inicio"> <br/>
+
+          Fim:    <input type="number" name="fim" id="fim"> <br/>
+
+          Passo:  <input type="number" name="passo" id="passo"> <br/>  
+          
+          <div class="b" id="botao" onclick="contar()" onmousedown="clicar()" onmouseup="soltar()" onmouseover="entrar('botao')" onmouseleave="sair('botao')" style="padding-left: px;">
+          ir</div>
+          
+        </div>
+
+        <div class="m" id="res">
+       
+        </div>
+
+    </section>
+    <footer>
+        <p>By oCactoPlayer</p>
+    </footer>
+    <script src ="script.js">
+    </script>
+</body>
+</html>
