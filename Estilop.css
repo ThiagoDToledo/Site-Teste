@@ -1,77 +1,92 @@
-/*
-f9e2b9 bege mais claro 
-f0c58e
-db9a60
-d18f5b
-c0814e bege mais escuro
+         
+         :root{
+            --bege1: #f9e2b9;
+            --bege2: #f0c58e;           
+            --bege3: #db9a60;
+            --bege4: #d18f5b;
+            --bege5: #c0814e;
+            --bege6: #664429;
 
-7ee0eb azul mais claro
-64c2ce
-429aa8
-2f464c azul mais escuro
-         */ 
+            --azul1: #7ee0eb;
+            --azul1: #64c2ce;
+            --azul1: #429aa8;
+            --azul1: #2f464c;
 
+         }
+         @font-face {
+            font-family: 'fonteTitulos';
+            src: url('fonts/Lobster/Lobster-Regular.ttf');
+            
+
+         }
 
          body{
-            background-color: #f0c58e;
+            background-color: var(--bege2);
             font: normal 18pt arial;
             color: black;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
+            margin: 0px;
+         }
+
+         a{
+            text-decoration: none;
+            color: black;
+         }
+         .tit h1, .tit h2, .tit > h1 > a{
+            font-family: 'fonteTitulos';
+            font-size: 36pt, 18pt;
+            color: var(--bege1);
+            text-shadow: 4px 0px var(--bege6), -3px 0px var(--bege6), 0px -2px var(--bege6), 0px 3px var(--bege6);
+            margin: 0px 0px 0px 0px;  
+            text-decoration: none;
+            padding: 5px;
+         }
+
+         .tit{
+            margin: 0px 0px 56px 0px;
          }
 
          section{
             border-radius: 20px;
-            background: #db9a60;
+            background: var(--bege3);
             text-align: center;
-            align-self: center;
-            box-shadow: 10px 5px 0px #664429;
-            width: 500px;
-            height: max-content;
+            box-shadow: 5px 3px 0px var(--bege6), 5px 3px 6px black;
+            width: 87.5%;
+            height: auto;
+            max-width: 500px;     
+            min-width: none; 
             margin: auto;
             padding: 20px;
-            position: -10px relative;
-         }
-
-         div.b{
-            background: #f9e2b9;
-            margin: 10px;
-            height: max-content;
-            min-width: 170px;
-            width: min-content;
-            min-height: 35px;
-            border-radius: 25px;
-            box-shadow: 5px 3px 0px #664429;            
-            align-items: center;
-            display: inline-flex;
-            justify-content: center;
-            line-height: 40px;
-            padding: 5px;
             
          }
 
          div.b{
-            background: #f9e2b9;
+            background: var(--bege1);
             margin: 10px;
+            width: auto;
             min-width: 170px;
+            max-width: fit-content;
             border-radius: 25px;
-            box-shadow: 5px 3px 0px #664429;            
+            box-shadow: 5px 3px 0px var(--bege6);            
             align-items: center;
             display: inline-flex;
             justify-content: center;
-            line-height: 40px;
-            
+            padding: 10px;
+         }
+
+         #bot{
+            display: block;
+            margin: auto auto 20px auto;
+            text-align: center;            
          }
 
          div.m{
-            background: #f0c58e;
+            background: var(--bege2);
             margin: auto;
             height: fit-content;
             width: fit-content;
             min-height: 35px;
             border-radius: 30px;
-            box-shadow: 5px 3px 0px #664429;            
+            box-shadow: 5px 3px 0px var(--bege6);            
             align-items: center;
             display: block;
             justify-content: center;
@@ -81,14 +96,14 @@ c0814e bege mais escuro
          }
 
          div.i{
-            background: #f0c58e;
+            background: var(--bege2);
             margin: auto;
             margin-top: 20px;
             margin-bottom: 20px;
             width: 230px;
             height: 230px;
             border-radius: 50%;
-            box-shadow: 5px 3px 0px #664429;            
+            box-shadow: 5px 3px 0px var(--bege6);            
             display: flex;
            
          }
@@ -100,7 +115,7 @@ c0814e bege mais escuro
             border-radius: 10px;
             font-size: 18pt;
             max-width: 120px;
-            background-color: #f9e2b9;
+            background-color: var(--bege1);
             
          }
 
@@ -113,14 +128,12 @@ c0814e bege mais escuro
             
         }
 
-         a{
-            text-decoration: none;
-            color: black;
-
-         }
-
          header{
             text-align: center;
+            background: var(--bege5);
+            height: auto;
+            max-height: 400px;
+            box-shadow: 0px 3px 0px var(--bege6), 0px 3px 6px black;
          }
 
          footer{
