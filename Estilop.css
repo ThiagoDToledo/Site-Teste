@@ -14,8 +14,8 @@
 
          }
          @font-face {
-            font-family: 'fonteTitulos';
-            src: url('fonts/Lobster/Lobster-Regular.ttf');
+            font-family: 'Lobster', cursive;
+            src: url('fonts/Lobster/Lobster-Regular.ttf') format('ttf');
             
 
          }
@@ -32,7 +32,7 @@
             color: black;
          }
          .tit h1, .tit h2, .tit > h1 > a{
-            font-family: 'fonteTitulos';
+            font-family: 'Lobster';
             font-size: 36pt, 18pt;
             color: var(--bege1);
             text-shadow: 4px 0px var(--bege6), -3px 0px var(--bege6), 0px -2px var(--bege6), 0px 3px var(--bege6);
