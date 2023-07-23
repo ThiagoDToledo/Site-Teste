@@ -86,7 +86,7 @@
             background: var(--bege2);
             margin: auto;
             height: fit-content;
-            width: fit-content;
+            width: auto;
             min-height: 35px;
             border-radius: 30px;
             box-shadow: 5px 3px 0px var(--bege6);            
