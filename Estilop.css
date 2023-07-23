@@ -28,8 +28,10 @@
          }
 
          a{
+            display: contents;
             text-decoration: none;
             color: black;
+            
          }
          .tit h1, .tit h2, .tit > h1 > a{
             font-family: 'fonteTitulos';
@@ -78,6 +80,7 @@
             margin: auto auto 20px auto;
             text-align: center;            
          }
+         
 
          div.m{
             background: var(--bege2);
