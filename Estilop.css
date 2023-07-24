@@ -133,6 +133,20 @@
             padding: 10px;
         }
 
+        abbr{
+         text-align: right;
+         font-size: 12pt;
+         text-decoration: none;
+      
+        }
+
+        div.int{
+         line-height: 18px;
+         text-align: right;
+         padding-right: 6px;
+         height: 0px;
+        }
+
          header{
             text-align: center;
             background: var(--bege5);

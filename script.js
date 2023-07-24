@@ -84,8 +84,11 @@ function carregar(){
     var msg = window.document.querySelector('div#msg');
     var image = window.document.querySelector('img#foto');
     var hora = ref.getHours();
+
+    let x = window.document.createElement('span');
+    msg.appendChild(x);
     //var hora = 20;
-    msg.innerHTML = `Agora são ${hora} horas.`
+    x.innerHTML = `Agora são ${hora} horas.`
     
     if(hora >= 5 && hora <= 12){
 
