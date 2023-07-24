@@ -119,16 +119,18 @@
             font-size: 18pt;
             max-width: 120px;
             background-color: var(--bege1);
-            
+            padding: 0px 10px 0px 10px;
          }
 
          select{
             width: 160px;
+            background-color: var(--bege1);
             min-width: fit-content;
             border: none;
             border-radius: 20px;
             padding: 5px;
-            
+            overflow: hidden;
+            padding: 10px;
         }
 
          header{
